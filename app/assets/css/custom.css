@@ -1,0 +1,13 @@
+/* https://tailwindcss.com/docs/functions-and-directives#reference-directive */
+/* added this as tailwind wasn't recognizing the @apply directive for `inset-0` */
+@reference 'tailwindcss'; 
+
+/* Base Styles */
+html {
+  @apply text-sm xl:text-base;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-sans);
+}
