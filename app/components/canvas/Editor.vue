@@ -6,7 +6,7 @@
           Canvas Editor
         </h2>
         <ui-button
-          size="sm"
+          variant="secondary"
           @click="handleExport"
         >
           <icon

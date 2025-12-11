@@ -16,7 +16,33 @@ export default defineNuxtConfig({
     // Set base URL for GitHub Pages deployment
     baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
-      title: 'Kinda Canva',
+      title: 'Nuxt Kinda Figma - A Figma-like Canvas Editor',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          name: 'description',
+          content: 'A Figma-like canvas editor built with Nuxt 4, Vue 3, and Konva. Create and edit designs with text, images, shapes, and more.',
+        },
+        // Open Graph / Facebook
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://syed-haroon.github.io/nuxt-kinda-figma/' },
+        { property: 'og:title', content: 'Nuxt Kinda Figma - A Figma-like Canvas Editor' },
+        {
+          property: 'og:description',
+          content: 'A Figma-like canvas editor built with Nuxt 4, Vue 3, and Konva. Create and edit designs with text, images, shapes, and more.',
+        },
+        { property: 'og:image', content: 'https://syed-haroon.github.io/nuxt-kinda-figma/og-image.svg' },
+        // Twitter
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:url', content: 'https://syed-haroon.github.io/nuxt-kinda-figma/' },
+        { name: 'twitter:title', content: 'Nuxt Kinda Figma - A Figma-like Canvas Editor' },
+        {
+          name: 'twitter:description',
+          content: 'A Figma-like canvas editor built with Nuxt 4, Vue 3, and Konva. Create and edit designs with text, images, shapes, and more.',
+        },
+        { name: 'twitter:image', content: 'https://syed-haroon.github.io/nuxt-kinda-figma/og-image.svg' },
+      ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       ],
