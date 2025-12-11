@@ -1,4 +1,4 @@
-# Nuxt Kinda Figma
+# Kinda Figma App
 
 A Figma-like canvas editor built with Nuxt 4, Vue 3, and Konva. Create and edit designs with text, images, shapes, and more in a modern web interface.
 
