@@ -32,7 +32,7 @@ export default defineNuxtConfig({
           property: 'og:description',
           content: 'A Figma-like canvas editor built with Nuxt 4, Vue 3, and Konva. Create and edit designs with text, images, shapes, and more.',
         },
-        { property: 'og:image', content: 'https://syed-haroon.github.io/nuxt-kinda-figma/og-image.svg' },
+        { property: 'og:image', content: 'https://syed-haroon.github.io/nuxt-kinda-figma/og-image.jpg' },
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:url', content: 'https://syed-haroon.github.io/nuxt-kinda-figma/' },
