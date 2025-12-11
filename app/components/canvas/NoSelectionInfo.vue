@@ -5,7 +5,7 @@
     <div class="mx-auto w-20 h-20 rounded-full bg-slate-50 flex items-center justify-center border border-slate-100">
       <icon
         name="lucide:mouse-pointer-2"
-        class="w-8 h-8 text-slate-400"
+        class="text-4xl text-slate-400"
       />
     </div>
     <div class="mt-3 text-sm font-medium text-slate-600">

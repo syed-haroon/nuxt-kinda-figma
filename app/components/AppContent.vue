@@ -1,9 +1,5 @@
 <template>
-  <div
-    v-if="hasDrawer"
-    class="flex gap-5 p-5 min-h-screen relative"
-  >
-    <!-- If hasDrawer then two-column layout -->
+  <div class="flex gap-5 p-5 h-dvh relative">
     <!-- Left column: top-bar + main content -->
     <div class="flex-1 flex flex-col space-y-5 min-w-0">
       <app-topbar
@@ -49,26 +45,9 @@
       </div>
     </aside>
   </div>
-
-  <div
-    v-else
-    class="flex flex-col p-5 min-h-screen space-y-5"
-  >
-    <!-- Without drawer: single-column layout -->
-    <app-topbar>
-      <slot name="top-bar" />
-    </app-topbar>
-
-    <main class="relative flex-1">
-      <slot />
-    </main>
-  </div>
 </template>
 
 <script setup lang="ts">
-const slots = useSlots();
-const hasDrawer = computed(() => !!slots.drawer);
-
 // Drawer state - closed on mobile by default, open on desktop
 const isDrawerOpen = ref(false);
 const isMobile = ref(false);
