@@ -13,6 +13,8 @@ export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: true },
   app: {
+    // Set base URL for GitHub Pages deployment
+    baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
       title: 'Kinda Canva',
       link: [

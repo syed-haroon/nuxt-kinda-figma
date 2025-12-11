@@ -41,6 +41,9 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build with Nuxt
+        env:
+          # Set base URL for GitHub Pages (repository name)
+          NUXT_APP_BASE_URL: /nuxt-kinda-figma/
         run: yarn generate
 
       - name: Upload artifact
